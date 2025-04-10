@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f7dde3918d7f4569a3a70fc51bafe311" Name="Diagram1">
+        <EntityTypeShape EntityType="botvinkoModel.Cleaning_shedule" Width="1.5" PointX="3" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="botvinkoModel.Guests" Width="1.5" PointX="4.125" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="botvinkoModel.Guests_services" Width="1.5" PointX="10.125" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="botvinkoModel.Payments" Width="1.5" PointX="8.375" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="botvinkoModel.Reservations" Width="1.5" PointX="7.25" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="botvinkoModel.Room_accsess" Width="1.5" PointX="6" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="botvinkoModel.Rooms" Width="1.5" PointX="0.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="botvinkoModel.Services" Width="1.5" PointX="12.375" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="botvinkoModel.Users" Width="1.5" PointX="1" PointY="6" IsExpanded="true" />
+        <AssociationConnector Association="botvinkoModel.FK_Cleaning_shedule_Rooms" ManuallyRouted="false" />
+        <AssociationConnector Association="botvinkoModel.FK_Cleaning_shedule_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="botvinkoModel.FK_Room_accsess_Guests" ManuallyRouted="false" />
+        <AssociationConnector Association="botvinkoModel.FK_Guests_services_Reservations" ManuallyRouted="false" />
+        <AssociationConnector Association="botvinkoModel.FK_Guests_services_Services" ManuallyRouted="false" />
+        <AssociationConnector Association="botvinkoModel.FK_Payments_Reservations" ManuallyRouted="false" />
+        <AssociationConnector Association="botvinkoModel.FK_Room_accsess_Rooms" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
