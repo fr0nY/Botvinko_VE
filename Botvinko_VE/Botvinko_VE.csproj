@@ -67,11 +67,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddingUser.xaml.cs">
+      <DependentUpon>AddingUser.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AdminWindow.xaml.cs">
       <DependentUpon>AdminWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BookingPage.xaml.cs">
+      <DependentUpon>BookingPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ChagePasswordWindow.xaml.cs">
       <DependentUpon>ChagePasswordWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CleaningPage.xaml.cs">
+      <DependentUpon>CleaningPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Cleaning_shedule.cs">
       <DependentUpon>Model5.tt</DependentUpon>
@@ -79,8 +88,14 @@
     <Compile Include="Guests.cs">
       <DependentUpon>Model5.tt</DependentUpon>
     </Compile>
+    <Compile Include="GuestsPage.xaml.cs">
+      <DependentUpon>GuestsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Guests_services.cs">
       <DependentUpon>Model5.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel management system.xaml.cs">
+      <DependentUpon>Hotel management system.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model5.cs">
       <AutoGen>True</AutoGen>
@@ -96,6 +111,9 @@
     <Compile Include="Rooms.cs">
       <DependentUpon>Model5.tt</DependentUpon>
     </Compile>
+    <Compile Include="RoomsPage.xaml.cs">
+      <DependentUpon>RoomsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Room_accsess.cs">
       <DependentUpon>Model5.tt</DependentUpon>
     </Compile>
@@ -105,11 +123,31 @@
     <Compile Include="Users.cs">
       <DependentUpon>Model5.tt</DependentUpon>
     </Compile>
+    <Page Include="AddingUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AdminWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="BookingPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ChagePasswordWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CleaningPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GuestsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Hotel management system.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -125,6 +163,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="RoomsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model1.Context.cs">

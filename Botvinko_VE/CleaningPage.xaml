@@ -1,0 +1,43 @@
+﻿<Page x:Class="Botvinko_VE.CleaningPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Botvinko_VE"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CleaningPage">
+
+    <Grid Margin="10">
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#FF00FF" Offset="0.0"/>
+                <GradientStop Color="#87CEFA" Offset="1.0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,20" Background="White">
+            <TextBlock Text="Выберите дату: " VerticalAlignment="Center" Margin="0,0,5,0"/>
+            <DatePicker Name="CleaningDatePicker" Width="120" SelectedDate="{Binding SelectedDate}" Background="White"/>
+            <Button Content="Начать уборку" Margin="20,0,0,0" Padding="10,5" 
+                    Command="{Binding StartCleaningCommand}" Background="White"/>
+        </StackPanel>
+
+        <DataGrid Grid.Row="2" Name="CleaningDataGrid" AutoGenerateColumns="False" 
+                  ItemsSource="{Binding Cleanings}" IsReadOnly="True"
+                  Background="White" RowBackground="White" AlternatingRowBackground="#FFF5F5F5">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Дата уборки" Binding="{Binding CleaningDate, StringFormat={}{0:dd.MM.yyyy}}" Width="90"/>
+                <DataGridTextColumn Header="Номер" Binding="{Binding CleaningNumber}" Width="80"/>
+                <DataGridTextColumn Header="Сотрудник" Binding="{Binding EmployeeName}" Width="100"/>
+                <DataGridTextColumn Header="Статус" Binding="{Binding Status}" Width="100"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>
